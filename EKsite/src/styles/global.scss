@@ -1,3 +1,10 @@
-@import 'reset';
-@import 'variables';
-@import 'mixins';
+@import './reset.scss';
+@import './variables';
+@import './mixins';
+@import '../pages/AboutPage/About.scss';
+@import '../pages/HomePage/Home.scss';
+@import '../pages/LogInPage/Login.scss';
+@import '../pages/MembersPage/Members.scss';
+@import '../pages/ProjectsPage/Projects.scss';
+@import '../pages/SignUpLogInPage/SignUpLogIn.scss';
+@import '../components/Modals/LogIn.scss';
