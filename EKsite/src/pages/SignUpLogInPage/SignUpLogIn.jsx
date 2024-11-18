@@ -7,7 +7,7 @@ const SignUpLogIn = () => {
       <div className='SignInLogInContainer'>
         <div className='logoContainer'><img src={MediumLogo} alt="MediumLogo" /></div>
         <div className='mainContainer'>
-          <div><img src={FirstSign} alt="FirstSign" /></div>
+          <div><img className='firstSign' src={FirstSign} alt="FirstSign" /></div>
           <div className='formContainer'>
             <LogInForm/>
           </div>

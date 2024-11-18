@@ -1,3 +1,5 @@
+@use '../../styles/variables.scss' as vars;
+
 .logInContainer {
   display: flex;
   flex-direction: column;
@@ -6,8 +8,8 @@
   height: fit-content;
 
   .formHeader {
-    font-family: $primary-font;
-    color: $fourthly-color;
+    font-family: vars.$primary-font;
+    color: vars.$fourthly-color;
     font-size: 48px;
     text-align: center;
   }
@@ -20,17 +22,17 @@
       width: fit-content;
       background-color: transparent;
       border: none;
-      border-bottom: 1px solid $fourthly-color;
+      border-bottom: 1px solid vars.$fourthly-color;
       height: 40px;
       width: 450px;
       outline: none;
       font-size: 32px;
-      color: $fourthly-color;
+      color: vars.$fourthly-color;
       padding: 10px;
     }
 
     input::placeholder {
-      color: $fourthly-color;
+      color: vars.$fourthly-color;
       opacity: 60%;
       font-size: 32px;
     }
@@ -47,19 +49,19 @@
       height: 60px;
       width: 300px;
       border-radius: 4px;
-      background-color: $thirdly-color;
+      background-color: vars.$thirdly-color;
       border: none;
-      color: $fourthly-color;
+      color: vars.$fourthly-color;
       font-size: 32px;
       cursor: pointer;
-      box-shadow: $primaryShadow;
+      box-shadow: vars.$primaryShadow;
     }
 
     a{
-      color: $fourthly-color;
+      color: vars.$fourthly-color;
       opacity: 60%;
       font-size: 32px;
-      font-family: $primary-font;
+      font-family: vars.$primary-font;
       text-decoration: none; 
       display: flex;
       justify-content: center;
