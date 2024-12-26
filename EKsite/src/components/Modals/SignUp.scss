@@ -1,18 +1,12 @@
 @use '../../styles/variables.scss' as vars;
 @use '../../styles/mixins.scss' as mixins;
-.logInContainer {
+.SignUpContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  display: none ;
 
-  &.active {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-out, visibility 0s 0.5s;
-  }
-  
 
   .formHeader {
     font-family: vars.$primary-font;
@@ -52,7 +46,7 @@
   .buttonContainer{
     padding-top: 35px;
 
-    .LogInButton{
+    .SignUpButton{
       height: 60px;
       width: 200px;
       border-radius: 4px;
@@ -73,6 +67,10 @@
       display: flex;
       justify-content: center;
       padding-top: 20px;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    a:hover{
+      color: vars.$thirdly-color;
     }
   }
 
