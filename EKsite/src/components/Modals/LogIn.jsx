@@ -1,9 +1,16 @@
 import { useState } from "react";
+import { useNavigate } from "react-router";
+
 const LogIn = () => {
   const [isActive, setIsActive] = useState(false);
-
+  let navigate = useNavigate();
+  
   const toggleClass = () => {
     setIsActive(!isActive);
+    
+    setTimeout(() => {
+      navigate("/home");
+  }, 1000);
   };
   return (
     <div className={`logInContainer ${isActive ? 'active' : ''}`}>
