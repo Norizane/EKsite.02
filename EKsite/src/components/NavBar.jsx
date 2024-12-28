@@ -1,15 +1,18 @@
-import MediumLogo from "../assets/images/BigLogo.png"
+import BigLogo from "../assets/images/BigLogo.png"
+import { useNavigate } from "react-router";
 
 const NavBar = () => {
+  let navigate = useNavigate();
+
   return (
     <>
       <div className="navBarContainer">
-        <img src={MediumLogo} alt="MediumLogo" />
+        <img src={BigLogo} alt="BigLogo" />
         <div className="navBarLinks">
-          <a href="">HOME</a>
-          <a href="">MEMBERS</a>
-          <a href="">PROJECTS</a>
-          <a href="">ABOUT</a>
+          <a onClick={()=>{navigate("/home")}} href="">HOME</a>
+          <a onClick={()=>{navigate("/members")}} href="">MEMBERS</a>
+          <a onClick={()=>{navigate("/projects")}} href="">PROJECTS</a>
+          <a onClick={()=>{navigate("/about")}} href="">ABOUT</a>
         </div>
       </div>
     </>

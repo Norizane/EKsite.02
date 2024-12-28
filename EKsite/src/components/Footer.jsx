@@ -1,12 +1,15 @@
 import CdDesktop from "../assets/images/CDImageDesktop.png";
+import CountDown from "./CountDown";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+  let navigate = useNavigate();
   return (
     <>
       <div className="footerContainer">
         <div className="birthdayClock">
-          <h1>tutaj będize napis</h1>
+          <CountDown/>
         </div>
-        <img src={CdDesktop} alt="CdDesktop" />
+        <img onClick={()=>{navigate("/")}}  src={CdDesktop} alt="CdDesktop" />
       </div>
     </>
   );

@@ -1,6 +1,7 @@
 @use './reset.scss';
 @use './variables.scss';
 @use './mixins.scss';
+@use '../components/NavBar.scss';
 @use '../pages/AboutPage/About.scss';
 @use '../pages/HomePage/Home.scss';
 @use '../components/Modals/SignUp.scss';
@@ -9,5 +10,5 @@
 @use '../pages/ProjectsPage/Projects.scss';
 @use '../pages/SignUpLogInPage/SignUpLogIn.scss';
 @use '../components/Modals/LogIn.scss';
-@use '../components/NavBar.scss';
 @use '../components/Footer.scss';
+@use '../components//CountDown.scss';
