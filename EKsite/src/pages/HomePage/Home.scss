@@ -1,0 +1,38 @@
+@use "../../styles/variables.scss" as vars;
+@use "../../styles/mixins.scss" as mixins;
+.HomeContainer {
+  background-color: vars.$primaryColor;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+ 
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    .homeSign {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+    }
+    .homeSign img {
+      object-fit: contain; 
+    }
+
+    // .homeSign::after{
+    //   content: '';
+    //   background-color: red;
+    //   display: block;
+    //   height: 50px;
+    //   width: 50px;
+    //   position: absolute;
+    //   bottom: 300px;
+    //   right: 620px;
+    // }
+  }
+}

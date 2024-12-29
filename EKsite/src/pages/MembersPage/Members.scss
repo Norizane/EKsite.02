@@ -1,0 +1,30 @@
+@use "../../styles/variables.scss" as vars;
+@use "../../styles/mixins.scss" as mixins;
+
+.membersContainer {
+  background-color: vars.$primaryColor;
+  height: 100vh;
+  overflow-y: scroll;
+
+  h1{
+    color:vars.$fourthly-color ;
+    font-family: vars.$Members-font;
+    text-align: center;
+    font-size: 48px;
+  }
+
+  .membersCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    margin-bottom: 50px;
+  
+  }
+
+  .memberCard {
+    background-color: #5c6165;
+    width: 550px;
+    height: 600px;
+  }
+}

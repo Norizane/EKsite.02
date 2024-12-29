@@ -1,17 +1,19 @@
+@use '../styles/variables' as vars;
+
 @mixin mobile {
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: vars.$breakpoint-mobile) {
     @content;
   }
 }
 
 @mixin laptop {
-  @media (min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-laptop) {
+  @media (min-width: vars.$breakpoint-mobile) and (max-width: vars.$breakpoint-laptop) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: vars.$breakpoint-desktop) {
     @content;
   }
 }
