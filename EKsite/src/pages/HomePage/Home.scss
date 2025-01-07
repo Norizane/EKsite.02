@@ -24,15 +24,11 @@
       object-fit: contain; 
     }
 
-    // .homeSign::after{
-    //   content: '';
-    //   background-color: red;
-    //   display: block;
-    //   height: 50px;
-    //   width: 50px;
-    //   position: absolute;
-    //   bottom: 300px;
-    //   right: 620px;
-    // }
+  }
+}
+
+@include mixins.laptop{
+  .homeSign img {
+    height: 345px;
   }
 }

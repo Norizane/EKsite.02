@@ -9,22 +9,18 @@ const About = () => {
         console.log(entry);
         if (entry.isIntersecting) {
           entry.target.classList.add("showSection");
-        } else {
-          entry.target.classList.remove("showSection");
-        }
+        } 
       });
     });
 
-    // Dodanie obserwatora po załadowaniu komponentu
+
     const animatedContainers = document.querySelectorAll(".descriptionContainer");
     animatedContainers.forEach((el) => observer.observe(el));
 
-    // Sprzątanie po sobie (usunięcie obserwatora po odmontowaniu komponentu)
     return () => {
       animatedContainers.forEach((el) => observer.unobserve(el));
     };
-  }, []); // Uruchomienie tylko raz po zamontowaniu komponentu
-
+  }, []);
 
   return (
     <>
