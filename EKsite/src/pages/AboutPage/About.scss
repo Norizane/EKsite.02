@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
+
   h1 {
     color: vars.$fourthly-color;
     font-family: vars.$AboutUs-font;
@@ -20,14 +21,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
-   
-      .video{
-        box-shadow: vars.$primaryShadow;
-        height: 600px;
-        margin-left: 200px;
-      }
-    
+
+    .video {
+      box-shadow: vars.$primaryShadow;
+      height: 600px;
+      margin-left: 200px;
+    }
 
     .descriptionContainer {
       background-color: #5c6165;
@@ -38,15 +37,15 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      h1{
+      h1 {
         margin: 0;
         text-align: center;
         width: 100%;
         font-family: vars.$primary-font;
       }
-      p{
+      p {
         text-align: center;
-        padding:  0 30px;
+        padding: 0 30px;
         font-family: vars.$primary-font;
       }
     }
@@ -63,14 +62,14 @@
       margin-left: 100px;
       gap: 30px;
       justify-content: center;
-
+  
       .descriptionContainer {
         display: flex;
         opacity: 0;
         filter: blur(5px);
-        transform: translateX(-100vw);
+        transform: translateX(-50vw);
         transition: all 3s;
-
+       
         .description {
           background-color: #5c6165;
           height: 250px;
@@ -81,26 +80,30 @@
           flex-direction: column;
           justify-content: center;
 
-          p{
+
+          p {
             text-align: center;
-            padding:  0 30px;
+            padding: 0 30px;
             font-family: vars.$primary-font;
             font-size: large;
+            .paraguayanRebellionLink {
+              color: white;
+              cursor: pointer;
+            }
           }
         }
         .img {
-          background-color: #5c6165;
           height: 250px;
           width: 300px;
           box-shadow: vars.$primaryShadow;
         }
       }
-     
-      .showSection{
+
+      .showSection {
         opacity: 1;
         filter: blur(0);
         transform: translateX(0);
-       }
+      }
     }
   }
   .thirdContainer {
@@ -121,6 +124,7 @@
 
     .askUsContainer {
       background-color: #5c6165;
+      box-shadow: vars.$primaryShadow;
       height: 300px;
       width: 700px;
     }
@@ -131,6 +135,7 @@
       .icon {
         height: 100px;
         width: 100px;
+        cursor: pointer;
 
         i {
           display: flex;
@@ -145,48 +150,48 @@
   }
 }
 
-
-@include mixins.laptop{
-  .aboutContainer{
-    h1{
+@include mixins.laptop {
+  .aboutContainer {
+    h1 {
       width: 252px;
       margin-left: 200px;
     }
-    .firstAboutContainer{
-      .descriptionContainer{
+    .firstAboutContainer {
+      .descriptionContainer {
         height: 250px;
         width: 600px;
       }
-      .video{
+      .video {
         height: 450px;
       }
     }
-    .secondContainer{
+    .secondContainer {
       margin-top: 20px;
-      .secondDescriptionContainer{
+      .secondDescriptionContainer {
         .descriptionContainer {
-          .description{
+          .description {
             height: 200px;
             width: 800px;
           }
-          .img{
+          .img {
             height: 200px;
             width: 250px;
           }
         }
-      } 
+      }
     }
-    .thirdContainer{
+    .thirdContainer {
       margin-right: 100px;
-      h1,h2{
+      h1,
+      h2 {
         width: 600px;
       }
-      .askUsContainer{
-        width: 600px;
+      .askUsContainer {
+        width: 600px;      
       }
-      .socialMediaContainer{
+      .socialMediaContainer {
         gap: 70px;
       }
     }
-  }  
+  }
 }

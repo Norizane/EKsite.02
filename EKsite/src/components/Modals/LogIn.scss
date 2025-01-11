@@ -61,7 +61,8 @@
       color: vars.$fourthly-color;
       font-size: 32px;
       cursor: pointer;
-      box-shadow: vars.$primaryShadow;
+      box-shadow: vars.$primaryShadow;  
+      font-family: vars.$primary-font;
     }
 
     a{

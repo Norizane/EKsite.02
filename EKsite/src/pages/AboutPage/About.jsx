@@ -1,6 +1,10 @@
 import NavBar from "../../components/NavBar";
+import AskUs from "../../components/Modals/askUs";
 import Background from "../../assets/images/EKbackground.png";
 import Video from "../../assets/video/video.mp4";
+import ekwador1 from "../../assets/images/GrupPhotos/ekwador1.jpg";
+import ekwador2 from "../../assets/images/GrupPhotos/ekwador2.jpeg";
+import ekwador3 from "../../assets/images/GrupPhotos/ekwador3.png";
 import { useEffect } from "react";
 const About = () => {
   useEffect(() => {
@@ -11,7 +15,7 @@ const About = () => {
           entry.target.classList.add("showSection");
         }
       });
-    });
+    },);
 
     const animatedContainers = document.querySelectorAll(
       ".descriptionContainer"
@@ -37,15 +41,23 @@ const About = () => {
           </video>
           <div className="descriptionContainer">
             <h1>How it all started</h1>
-            <p>Our story begins during a joyful return from the birthday party of one of our Ecuadorian ladies. During this fascinating party and the journey back, an idea was born, which then turned into a beautiful adventure that continues to this day. On that day, the founding fathers, led by Admin, not only created our group but also made a kind of vow. To this day, we all live in Ecuador according to these words: “Bo rodzina jest zawsze razem!!”</p>
+            <p>
+              Our story begins during a joyful return from the birthday party of
+              one of our Ecuadorian ladies. During this fascinating party and
+              the journey back, an idea was born, which then turned into a
+              beautiful adventure that continues to this day. On that day, the
+              founding fathers, led by Admin, not only created our group but
+              also made a kind of vow. To this day, we all live in Ecuador
+              according to these words: “Bo rodzina jest zawsze razem!!”
+            </p>
           </div>
         </div>
         <div className="secondContainer">
           <div className="secondDescriptionContainer">
-            <div className="descriptionContainer" id="secondSection">
+            <div className="descriptionContainer">
               <div className="description">
                 <p>
-                {" "}
+                  {" "}
                   In the same year, the Ecuador International group was also
                   established to expand our horizons and develop skills by
                   playing with members from outside our country's borders in
@@ -55,12 +67,12 @@ const About = () => {
                   can be described with the words: "Ekwador JAZDAAAAAAAA!!".
                 </p>
               </div>
-              <div className="img"></div>
+              <img src={ekwador1} alt="firstAboutPhoto" className="img"></img>
             </div>
-            <div className="descriptionContainer" id="secondSection">
+            <div className="descriptionContainer">
               <div className="description">
                 <p>
-                {" "}
+                  {" "}
                   After two years, our shared good times resulted in another
                   exciting chapter in the history of our group: the creation of
                   our Discord server. This gave us new opportunities not only in
@@ -69,16 +81,18 @@ const About = () => {
                   as "New Friends and Companions." However, it would not be
                   realistic if our beautiful history did not also include
                   challenges. This period could also be referred to as the{" "}
-                  <a className="paraguayanRebellionLink" href="about.html">"Great Paraguayan Rebellion,"</a> from
-                  which we emerged victorious and stronger than before.
+                  <a className="paraguayanRebellionLink" href="about.html">
+                    "Great Paraguayan Rebellion,"
+                  </a>{" "}
+                  from which we emerged victorious and stronger than before.
                 </p>
               </div>
-              <div className="img"></div>
+              <img src={ekwador2} alt="secondAboutPhoto" className="img"></img>
             </div>
-            <div className="descriptionContainer" id="secondSection">
+            <div className="descriptionContainer">
               <div className="description">
                 <p>
-                {" "}
+                  {" "}
                   We move to the present day, during which, among other things,
                   this website is being created. With many interesting projects
                   and experiences behind us, I can confidently say that the
@@ -88,13 +102,13 @@ const About = () => {
                   described by the words: "Ciąg dalszy nastąpi"
                 </p>
               </div>
-              <div className="img"></div>
+              <img src={ekwador3} alt="thirdAboutPhoto" className="img"></img>
             </div>
           </div>
         </div>
         <div className="thirdContainer">
           <h1>Ask Us</h1>
-          <div className="askUsContainer"></div>
+          <div className="askUsContainer"><AskUs></AskUs></div>
           <h2>Social Media</h2>
           <div className="socialMediaContainer">
             <div className="icon">
