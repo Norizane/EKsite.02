@@ -161,6 +161,9 @@
         height: 250px;
         width: 600px;
       }
+      h1{
+        font-size: xx-large;
+      }
       .video {
         height: 450px;
       }
@@ -168,6 +171,7 @@
     .secondContainer {
       margin-top: 20px;
       .secondDescriptionContainer {
+        margin-left: 80px;
         .descriptionContainer {
           .description {
             height: 200px;

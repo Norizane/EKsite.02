@@ -27,7 +27,16 @@
   .memberCard {
     background-color: #5c6165;
     width: 550px;
-    height: 600px;
+    height: 60vh;
     box-shadow: vars.$primaryShadow;
+  }
+}
+
+
+@include mixins.laptop {
+  .membersContainer{
+    h1{
+      padding-bottom: 0;
+    }
   }
 }
