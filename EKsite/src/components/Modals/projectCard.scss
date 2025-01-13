@@ -1,0 +1,17 @@
+@use '../../styles/variables.scss' as vars;
+@use '../../styles/mixins.scss' as mixins;
+
+
+.projectHeader{
+  padding-left: 20px;
+}
+  
+.projectDescription{
+  color: white;
+  font-family: vars.$primary-font;
+  padding: 0 20px;
+}
+
+.projectButton{
+  margin-bottom: 20px;
+}
