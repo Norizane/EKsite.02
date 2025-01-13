@@ -5,13 +5,13 @@
   background-color: vars.$primaryColor;
   height: 100vh;
   overflow-y: scroll;
+ 
 
   h1 {
     color: vars.$fourthly-color;
     font-family: vars.$Projects-font;
     text-align: center;
     font-size: 48px;
-    
   }
 
   .projectCardsContainer {
@@ -21,10 +21,41 @@
     gap: 40px;
     margin-bottom: 50px;
     .projectCard {
+      display: flex;
       height: 60vh;
       width: 70%;
       background-color: #5c6165;
       box-shadow: vars.$primaryShadow;
+    
+      .projectImg{
+        height: 100%;
+        width: 50%;
+      }
+      
+      .projectInformationContainer{ 
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        height: 100%;
+        width: 50%;
+
+        .projectHeader{
+          padding-left: 20px;
+        }
+          
+        .projectDescription{
+          color: white;
+          font-family: vars.$primary-font;
+          padding: 0 20px;
+        }
+
+        .projectButton{
+          margin-bottom: 20px;
+        }
+        
+      }
+      
     }
   }
 }

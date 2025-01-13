@@ -36,7 +36,7 @@ const CountDown = () => {
   return (
     <div>
       <h1>Birthday</h1>
-      <p>
+      <p className='coutDown'>
         {timeLeft.days} days, {timeLeft.hours} hours, {timeLeft.minutes} minutes, {timeLeft.seconds} seconds
       </p>
     </div>
