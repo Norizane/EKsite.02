@@ -1,9 +1,9 @@
 
 
-const projectCard = ({ title, description, image}) => {
+const projectCard = ({ title, description, image, className}) => {
   return (
     <>
-      <div className="projectCard">
+      <div className={`projectCard ${className}`}>
       <img className="projectImg" src={image} alt={title} />
         <div className="projectInformationContainer">
           <h1 className="projectHeader">{title}</h1>
