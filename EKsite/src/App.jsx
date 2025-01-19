@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage/Home'
 import AboutPage from './pages/AboutPage/About'
 import MembersPage from './pages/MembersPage/Members'
 import ProjectsPage from './pages/ProjectsPage/Projects'
+import ProjectInformationPage from './pages/ProjectsPage/ProjectInformation/ProjectInformationPage'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 
 function App() {
@@ -12,17 +13,17 @@ function App() {
 
   return (
     <>
-     <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-        <Route index element={<SignUpLogIn/>}/>
-        <Route path='/home' element={<HomePage/>}/>
-        <Route path='/about' element={<AboutPage/>}/>
-        <Route path='/members' element={<MembersPage/>}/>
-        <Route path='/projects' element={<ProjectsPage/>}/>
+        <Route index element={<SignUpLogIn />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/members" element={<MembersPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projectInformation/:id" element={<ProjectInformationPage />} /> 
       </Routes>
-     </BrowserRouter>
-     
-    </>
+    </BrowserRouter>
+  </>
   )
 }
 

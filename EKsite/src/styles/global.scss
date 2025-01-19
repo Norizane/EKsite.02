@@ -8,6 +8,7 @@
 @use '../pages/LogInPage/Login.scss';
 @use '../pages/MembersPage/Members.scss';
 @use '../pages/ProjectsPage/Projects.scss';
+@use '../pages/ProjectsPage/ProjectInformation/ProjectInformationPage.scss';
 @use '../pages/SignUpLogInPage/SignUpLogIn.scss';
 @use '../components/Modals/LogIn.scss';
 @use '../components/Footer.scss';
@@ -15,3 +16,4 @@
 @use '../components/Modals/askUs.scss';
 @use '../components/Modals/projectCard.scss';
 @use '../components/Modals/projectSection.scss';
+@use '../components/Modals/projectInformationModal.scss';

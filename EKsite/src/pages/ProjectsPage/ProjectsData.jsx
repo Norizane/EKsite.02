@@ -10,14 +10,28 @@ const projectsData = [
     "title": "Ekwador mixtape",
     "description": "Years ago, we started as a group of dreamers, writing poetry and sharing ideas. Now, we've turned those memories into an album—original songs and custom artwork that celebrate our beginnings and bring our old verses to life. Discover the story behind the music.",
     "image": ekwadorMixtape,
-    "link": "https://linkdoprojektu3.com"
+    "link": "https://linkdoprojektu3.com",
+    "projectInformation":{
+      "description": "Projekt 1",
+      "images": [
+        ekwadorMixtape,
+      ]
+    }
   },
   {
     "id": 2,
     "title": "Art",
     "description": "From delicate sketches to vivid digital creations, our art is a window into a world of imagination. Each piece holds a story, waiting to be uncovered. Dive into the mystery and see where the journey takes you.",
     "image": art,
-    "link": "https://linkdoprojektu3.com"
+    "link": "https://linkdoprojektu3.com",
+    "projectInformation":{
+      "description": "Projekt2",
+      "images": [
+        ekwadorMixtape,
+        art,
+        instagram
+      ]
+    }
   },
   {
     "id": 3,
