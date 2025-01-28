@@ -60,7 +60,8 @@
       flex-direction: column;
       height: 100%;
       margin-left: 100px;
-      gap: 30px;
+      padding-top: 50px;
+      gap: 50px;
       justify-content: center;
   
       .descriptionContainer {
@@ -73,7 +74,7 @@
         .description {
           background-color: #5c6165;
           height: 250px;
-          width: 1000px;
+          width: 1200px;
           margin-right: 30px;
           box-shadow: vars.$primaryShadow;
           display: flex;
@@ -83,7 +84,7 @@
 
           p {
             text-align: center;
-            padding: 0 30px;
+            padding: 0 100px;
             font-family: vars.$primary-font;
             font-size: large;
             .paraguayanRebellionLink {
@@ -175,7 +176,7 @@
         .descriptionContainer {
           .description {
             height: 200px;
-            width: 800px;
+            width: 900px;
           }
           .img {
             height: 200px;
