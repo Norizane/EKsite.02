@@ -48,7 +48,7 @@ const About = () => {
               beautiful adventure that continues to this day. On that day, the
               founding fathers, led by Admin, not only created our group but
               also made a kind of vow. To this day, we all live in Ecuador
-              according to these words: “Bo rodzina jest zawsze razem!!”
+              according to these words: <a className="quote">“Bo rodzina jest zawsze razem!!”</a>
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ const About = () => {
                   various titles, starting with CS . This period is also crucial
                   for us as individuals wanting to expand our competencies and
                   enter an unknown chapter of our personal lives. This period
-                  can be described with the words: "Ekwador JAZDAAAAAAAA!!".
+                  can be described with the words: <a className="quote">"Ekwador JAZDAAAAAAAA!!".</a>
                 </p>
               </div>
               <img src={ekwador1} alt="firstAboutPhoto" className="img"></img>
@@ -81,7 +81,7 @@ const About = () => {
                   as "New Friends and Companions." However, it would not be
                   realistic if our beautiful history did not also include
                   challenges. This period could also be referred to as the{" "}
-                  <a className="paraguayanRebellionLink" href="about.html">
+                  <a className="paraguayanRebellionLink " href="about.html">
                     "Great Paraguayan Rebellion,"
                   </a>{" "}
                   from which we emerged victorious and stronger than before.
@@ -99,7 +99,7 @@ const About = () => {
                   people who contribute to this group are truly amazing. I am
                   sure that this project is not the last, and the website will
                   require updates in the future. Therefore, this period is best
-                  described by the words: "Ciąg dalszy nastąpi"
+                  described by the words:<a className="quote">"Ciąg dalszy nastąpi"</a> 
                 </p>
               </div>
               <img src={ekwador3} alt="thirdAboutPhoto" className="img"></img>
