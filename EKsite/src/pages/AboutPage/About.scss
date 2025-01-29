@@ -9,7 +9,9 @@
   background-position: center;
   color: white;
 
-  h1 {
+
+
+  .firstHeader {
     color: vars.$fourthly-color;
     font-family: vars.$AboutUs-font;
     text-align: center;
@@ -21,13 +23,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+  .videoContainer{
+
 
     .video {
+      position: relative;
+      top: 100px;
+      left: 300px;
       box-shadow: vars.$primaryShadow;
       height: 600px;
-      margin-left: 200px;
-    }
+     
 
+    }
+  }
+ 
     .descriptionContainer {
       width: 900px;
       margin-right: 50px; 
@@ -159,11 +169,21 @@
 
 @include mixins.laptop {
   .aboutContainer {
-    h1 {
-      width: 252px;
-      margin-left: 200px;
+   
+    .firstHeader{
+     position: relative;
+     top: -30px;
     }
     .firstAboutContainer {
+      height: 500px;
+      .videoContainer{
+
+        .video{
+          height: 500px;
+          top: 30px;
+          left: 250px;
+        }
+      }
       .descriptionContainer {
         height: 250px;
         width: 700px;
@@ -181,8 +201,9 @@
       }
     }
     .secondContainer {
-      margin-top: 20px;
+    
       .secondDescriptionContainer {
+        padding-top: 0px;
         margin-left: 80px;
         .descriptionContainer {
           .description {

@@ -34,11 +34,14 @@ const About = () => {
         style={{ backgroundImage: `url(${Background})` }}
       >
         <NavBar />
-        <h1>Rodzina</h1>
+        <h1 className="firstHeader">Rodzina</h1>
         <div className="firstAboutContainer">
-          <video controls autoPlay loop muted className="video">
-            <source src={Video} type="video/mp4" />
-          </video>
+          <div className="videoContainer">
+            <video controls autoPlay loop muted className="video">
+              <source src={Video} type="video/mp4" />
+            </video>
+          </div>
+         
           <div className="descriptionContainer">
             <h1>How it all started</h1>
             <p>
