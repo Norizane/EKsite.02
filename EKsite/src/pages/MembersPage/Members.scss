@@ -16,18 +16,19 @@
   }
 
   .membersCardContainer {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   
   }
 
   .memberCard {
-    background-color: #5c6165;
-    width: 550px;
-    height: 60vh;
+    background-color: vars.$fifth_color;
+    width: 600px;
+    height: 70vh;
     box-shadow: vars.$primaryShadow;
   }
 }

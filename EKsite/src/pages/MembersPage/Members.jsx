@@ -5,7 +5,7 @@ const Members = () => {
     <>
       <div className="membersContainer">
         <NavBar/>
-        <h1>Rodzina</h1>
+        {/* <h1>Rodzina</h1> */}
           <div className="membersCardContainer">
             <div className="memberCard"></div>
             <div className="memberCard"></div>
