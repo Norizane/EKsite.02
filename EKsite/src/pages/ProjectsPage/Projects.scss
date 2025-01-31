@@ -2,12 +2,27 @@
 @use "../../styles/mixins.scss" as mixins;
 
 .projectsContainer {
-  background-color: vars.$primaryColor;
-  height: 300vh;
   overflow-y: scroll;
- 
+ .containers{
+  height: calc(300vh - 200px);
+    .fistProjectContainer{
+      height: calc(100vh - 200px);
+      background-color: vars.$secondaryColor;
+    }
 
- 
+    .secondProjectContainer{
+      position: relative;
+      height: 100vh;
+      background-color: vars.$primaryColor;
+    }
+
+    .thirdProjectContainer{
+      display: flex;
+      align-items: end;
+      height: 100vh;
+      background-color: vars.$primaryColor;
+    }
+  }
 }
 
 @include mixins.laptop{

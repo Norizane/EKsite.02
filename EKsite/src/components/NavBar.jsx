@@ -1,4 +1,4 @@
-import BigLogo from "../assets/images/BigLogo.png"
+import BigLogo from "../assets/images/EKLOGOv2.png"
 import { useNavigate } from "react-router";
 
 const NavBar = () => {
@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <>
       <div className="navBarContainer">
-        <img src={BigLogo} alt="BigLogo" />
+        <img className="BigLogo" src={BigLogo} alt="BigLogo" />
         <div className="navBarLinks">
           <a onClick={()=>{navigate("/home")}} href="">HOME</a>
           <a onClick={()=>{navigate("/members")}} href="">MEMBERS</a>

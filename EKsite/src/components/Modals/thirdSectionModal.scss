@@ -1,0 +1,18 @@
+@use '../../styles/variables.scss' as vars;
+@use '../../styles/mixins.scss' as mixins;
+
+
+.artTextContainer{
+
+}
+
+.artImageContainer{
+  
+  .artImage{
+    height: 70vh;
+    margin: 0 20px 20px;
+    border-radius: 8px;
+    box-shadow: vars.$primaryShadow;
+
+  }
+}
