@@ -1,13 +1,16 @@
 import NavBar from "../../components/NavBar"
-import SecondSectionModal from "../../components/Modals/secondSectionModal"
-import ThirdSectionModal from "../../components/Modals/thirdSectionModal"
+import FirstSectionModal from "../../components/Modals/firstProjectSectionModal"
+import SecondSectionModal from "../../components/Modals/secondProjectSectionModal"
+import ThirdSectionModal from "../../components/Modals/thirdProjectSectionModal"
 const Projects = () => {
   return (
     <>
       <div className="projectsContainer">
         <NavBar/> 
         <div className="containers">
-        <div className="fistProjectContainer"></div>
+        <div className="fistProjectContainer">
+          <FirstSectionModal/>
+        </div>
         <div className="secondProjectContainer">
           <SecondSectionModal/>
         </div>

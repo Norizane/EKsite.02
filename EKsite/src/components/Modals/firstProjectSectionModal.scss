@@ -1,0 +1,42 @@
+@use "../../styles/variables.scss" as vars;
+@use "../../styles/mixins.scss" as mixins;
+
+.headerContainer {
+  height: 40vh;
+  text-align: center;
+  padding-top: 100px;
+  h1 {
+    font-size: 80px;
+    margin-top: 0px;
+    font-family: vars.$Projects-font;
+    color: white;
+  }
+}
+
+.aboutProjectsContainer {
+  display: flex;
+  justify-content: end;
+  .paragraphContainer {
+    width: 50%;
+    text-align: center;
+    padding-right: 80px;
+    p {
+      padding-bottom: 150px;
+      font-size: x-large;
+      line-height: 1.6;
+      font-family: vars.$Projects-font;
+      color: white;
+    }
+  }
+}
+
+@include mixins.laptop {
+  
+  .aboutProjectsContainer {
+    .paragraphContainer {
+      p {
+        font-size: large;    
+      }
+    }
+  }
+}

@@ -7,7 +7,9 @@
   height: calc(300vh - 200px);
     .fistProjectContainer{
       height: calc(100vh - 200px);
-      background-color: vars.$secondaryColor;
+      background-color: vars.$primaryColor;
+      display: flex;
+      flex-direction: column;
     }
 
     .secondProjectContainer{
@@ -26,5 +28,5 @@
 }
 
 @include mixins.laptop{
- 
+  
 }
