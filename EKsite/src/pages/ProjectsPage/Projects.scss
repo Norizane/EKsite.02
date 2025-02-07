@@ -2,23 +2,22 @@
 @use "../../styles/mixins.scss" as mixins;
 
 .projectsContainer {
-  overflow-y: scroll;
- .containers{
-  height: calc(300vh - 200px);
-    .fistProjectContainer{
+  .containers {
+    height: calc(300vh - 200px);
+    .fistProjectContainer {
       height: calc(100vh - 200px);
       background-color: vars.$primaryColor;
       display: flex;
       flex-direction: column;
     }
 
-    .secondProjectContainer{
+    .secondProjectContainer {
       position: relative;
       height: 100vh;
       background-color: vars.$primaryColor;
     }
 
-    .thirdProjectContainer{
+    .thirdProjectContainer {
       display: flex;
       align-items: end;
       height: 100vh;
@@ -27,6 +26,5 @@
   }
 }
 
-@include mixins.laptop{
-  
+@include mixins.laptop {
 }

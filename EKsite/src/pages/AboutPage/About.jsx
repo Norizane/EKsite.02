@@ -15,7 +15,7 @@ const About = () => {
           entry.target.classList.add("showSection");
         }
       });
-    },);
+    });
 
     const animatedContainers = document.querySelectorAll(
       ".descriptionContainer"
@@ -41,7 +41,7 @@ const About = () => {
               <source src={Video} type="video/mp4" />
             </video>
           </div>
-         
+
           <div className="descriptionContainer">
             <h1>How it all started</h1>
             <p>
@@ -51,7 +51,8 @@ const About = () => {
               beautiful adventure that continues to this day. On that day, the
               founding fathers, led by Admin, not only created our group but
               also made a kind of vow. To this day, we all live in Ecuador
-              according to these words: <a className="quote">“Bo rodzina jest zawsze razem!!”</a>
+              according to these words:{" "}
+              <a className="quote">“Bo rodzina jest zawsze razem!!”</a>
             </p>
           </div>
         </div>
@@ -67,7 +68,8 @@ const About = () => {
                   various titles, starting with CS . This period is also crucial
                   for us as individuals wanting to expand our competencies and
                   enter an unknown chapter of our personal lives. This period
-                  can be described with the words: <a className="quote">"Ekwador JAZDAAAAAAAA!!".</a>
+                  can be described with the words:{" "}
+                  <a className="quote">"Ekwador JAZDAAAAAAAA!!".</a>
                 </p>
               </div>
               <img src={ekwador1} alt="firstAboutPhoto" className="img"></img>
@@ -102,7 +104,8 @@ const About = () => {
                   people who contribute to this group are truly amazing. I am
                   sure that this project is not the last, and the website will
                   require updates in the future. Therefore, this period is best
-                  described by the words:<a className="quote">"Ciąg dalszy nastąpi"</a> 
+                  described by the words:
+                  <a className="quote">"Ciąg dalszy nastąpi"</a>
                 </p>
               </div>
               <img src={ekwador3} alt="thirdAboutPhoto" className="img"></img>
@@ -111,7 +114,9 @@ const About = () => {
         </div>
         <div className="thirdContainer">
           <h1>Ask Us</h1>
-          <div className="askUsContainer"><AskUs></AskUs></div>
+          <div className="askUsContainer">
+            <AskUs></AskUs>
+          </div>
           <h2>Social Media</h2>
           <div className="socialMediaContainer">
             <div className="icon">

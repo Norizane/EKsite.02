@@ -1,10 +1,13 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden !important;
- }
-
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 #root {
   display: flex;
   flex-direction: column;
@@ -22,4 +25,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
